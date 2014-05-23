@@ -1,6 +1,9 @@
 
 module.exports.adapters = {
-    'default': 'mongo',
+    'default': 'disk',
+    disk:{
+        module:'sails-disk'
+    },
     mongo: {
         module   : 'sails-mongo',
         host     : 'localhost',
